@@ -96,3 +96,17 @@ Agent 会读 `catalog.csv` 找到对应姿势的 `images/…webp`，把它作为
 - **图片与原始数据著作权归原作者ギア（[@giaaibusi](https://x.com/giaaibusi)，[姿势](https://ai-pose-gallery.pages.dev/) / [服装](https://ai-costume-gallery.pages.dev/) / [人像](https://ai-portrait-gallery.pages.dev/)）所有**；中文整理来自 [anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh)。本仓库仅做格式转换（PNG→WebP、缩放）与技能化封装，不主张任何图片权利，**不得用于商业用途**。权利人如有异议请提 Issue，将立即删除。
 - `pose-reference-sexy/couple/all`、`costume-reference-sexy` 及 `pose-reference-upper` 的部分分类含成人向内容（18+）；人像均为 AI 生成的写实人像，请勿用于冒充真实人物，仅供成年人用于艺术创作与动作参考，严禁用于涉及未成年人或任何违法内容。
 - 详见 [NOTICE](NOTICE)。
+
+
+## Which skill to pick
+
+| Use case | Skill | Reference images |
+| --- | --- | --- |
+| Single person, any pose | [pose-reference-standard](skills/pose-reference-standard/SKILL.md) | 365 |
+| Upper body & portraits | [pose-reference-upper](skills/pose-reference-upper/SKILL.md) | 400 |
+| Sexy poses (18+) | [pose-reference-sexy](skills/pose-reference-sexy/SKILL.md) | 399 |
+| Couples | [pose-reference-couple](skills/pose-reference-couple/SKILL.md) | 275 |
+| Everything in one place | [pose-reference-all](skills/pose-reference-all/SKILL.md) | 1439 |
+| Outfits & costumes | [costume-reference](skills/costume-reference/SKILL.md) | 1068 |
+| Sexy costumes (18+) | [costume-reference-sexy](skills/costume-reference-sexy/SKILL.md) | 339 |
+| Portraits & faces | [portrait-reference](skills/portrait-reference/SKILL.md) | 1499 |
