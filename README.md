@@ -18,6 +18,20 @@ Eight self-contained Agent Skills bundling the pose (1,439), costume (1,407) and
 | [`costume-reference-sexy`](skills/costume-reference-sexy) | 339 | 服装：内衣睡衣 / 性感穿搭（**18+**） | 8 MB |
 | [`portrait-reference`](skills/portrait-reference) | 1499 | 人像：正脸参考 / 造型氛围，4 种发长、51 种发型 | 91 MB |
 
+
+## How to use (English)
+
+1. Pick a skill from the table above that matches what you need (full-body, upper-body, couple, costume, or portrait).
+2. Open that skill's `references/catalog.csv` and find the row by pose/outfit name and camera angle. The `图片` column holds the image path, relative to the skill root — for example `images/full_single_P041_front.webp`.
+3. Pass that image to your image/video model as a pose or composition reference (ControlNet / pose reference / reference image), and note in your prompt: "pose reference only — do not copy the outfit, hairstyle, or art style".
+4. Need multiple angles of the same pose? Take several rows of the same pose. For multi-person scenes, pick one pose per character.
+5. Skills can be combined: portrait fixes the face and hairstyle, costume fixes the outfit, pose fixes the action.
+
+Notes:
+- Reference images are pose skeletons only. Generated content must follow the content rules of the platform you use.
+- Skills marked 18+ contain adult-oriented poses. Do not use them to generate content involving minors or anything illegal.
+- Images are copyrighted by the original author ギア (ai-pose-gallery.pages.dev), Chinese edition by anhao/ai-pose-gallery-zh. Personal creative reference only, no commercial use.
+
 姿势图有 5 种视角中的若干个：正面 / 斜侧 / 侧面 / 俯视 / 仰视。服装、人像图最长边缩放到 1000px。三类技能可组合：人像定脸和发型 + 服装定穿搭 + 姿势定动作。
 
 ## 目录结构
